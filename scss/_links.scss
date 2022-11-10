@@ -1,0 +1,60 @@
+.links-container{
+    height: 0;
+    overflow: hidden;
+    @include transition;
+    
+}
+.show-links{
+    height: 200px;
+}
+.links a{
+    background-color: white;
+    color: black;
+    text-transform: capitalize;
+    display: block;
+    padding: 10px;
+    &:hover{
+        //padding: 0 5px;
+        @include transition;
+        color: navy;
+    }
+
+}
+.top-link{
+    font-size: 25px;
+    position: fixed;
+    bottom: 48px;
+    right: 48px;
+    background-color: transparent;
+    color: rgb(16, 98, 109);
+    width: 32px;
+    height: 32px;
+    //display: grid;
+    //place-items:center;
+    visibility: hidden;
+    z-index:-100;
+
+}
+.show-link{
+    visibility: visible;
+    z-index: 100;
+}
+.fixed-nav{
+    position: fixed;
+    //color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(112, 81, 143);
+    
+    box-shadow: 2px 1px 20px black;
+    z-index: 3; 
+    
+    .links{
+
+        a{
+            //color: black;
+        }
+    }
+
+}

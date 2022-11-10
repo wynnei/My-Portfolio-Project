@@ -1,0 +1,152 @@
+.html,.css,.javascript,.react,.git{
+   
+    background-color: $backgcolor3;
+    background:url(../images/andras-vas-Bd7gNnWJBkU-unsplash.jpg) center/cover no-repeat;
+    @include flexcolumn;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    z-index: 1;
+    color: $backgcolor2;
+    &::after{
+       @include gradient;
+    }
+    
+    h3{
+        margin: 10px 0px;
+    }
+
+}
+
+#skills{
+    background-color: $backgcolor1;
+    .skillset{
+        @include flexcenter;
+        flex-direction: column;
+    }
+
+}
+
+#about{
+    text-align: center;
+    .section-center{
+        
+        .about-content{
+            .img-about{
+                @include flexcenter;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                margin: 10px 10px 20px 10px;
+                height: 350px;
+                width: 250px;
+                border: 5px solid $white;
+                position: relative;
+                z-index: 1;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 98%;
+                    width: 98%;
+                    left: -20px;
+                    bottom: -20px;
+                    border: 5px solid red;
+                    z-index: -1;
+
+                }
+            }
+            .about-details{
+                h3{
+                    margin: 15px 0px;
+                }
+                p{
+                    margin-bottom: 20px;
+                }
+                a{
+                    @include links;
+                    color: $span;
+                    font-size: 16px;
+                    &:hover{
+                        color: $backgcolor2;
+                    }
+                }
+           
+            }
+        }
+    }
+
+}
+
+#contact{
+    min-width: 100%;
+    padding: 20px 0px;
+    @include flexcenter;
+    background-color: $backgcolor1;
+    .details{
+        @include flexcenter;
+        flex-direction: column;
+        gap: 20px;
+        //background-color:$backgcolor2 ;
+        margin: 30px 0;
+        
+        .phone,.email,.address{
+            @include contacts-styling;
+            display: flex;
+            display: row;
+            gap: 10px;
+            align-items: center;
+            padding-left: 20px;
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.footer{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    // margin: 0 auto;
+    // padding: 0 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    background-color: rgb(32, 32, 35);
+    padding: 10px;
+    color:rgba(238, 238, 245, 0.8) ;
+    &__container{
+        text-align: center;
+        h2{
+            text-transform: uppercase;
+            
+            span{
+                color: red;
+            }
+        }
+        h3{padding: 7px;}
+        .social-icons{
+            
+            display: flex;
+            gap: 20px;
+            place-content: center;
+            padding: 7px;
+            li{
+                color:rgba(238, 238, 245, 0.8) ;
+                transition: 2s ease ;
+                &:hover{
+                    color: rgb(243, 154, 154);
+                }
+
+            }
+        }
+        p{}
+
+    }
+}

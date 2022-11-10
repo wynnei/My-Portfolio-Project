@@ -1,0 +1,204 @@
+$mobile:576px;
+$tablet:768px;
+$laptop:992px;
+$desktop:1200px;
+
+@mixin mobile {
+    @media screen and (min-width:$mobile){
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (min-width:$tablet){
+        @content;
+    }
+}
+@mixin laptop {
+    @media screen and (min-width:$laptop){
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and (min-width:$desktop){
+        @content;
+    }
+}
+@include mobile {
+    body{
+        p{
+            font-size: 18px;
+        }
+    }
+}
+@include tablet {
+   body{
+    p{
+        font-size: 20px;
+    }
+    .html,.css,.javascript,.react,.git{
+        height: 370px;
+        width: 350px;
+    }
+    header{
+    .container{
+    .intro{
+        h1{
+            font-size: 100px;
+        }
+    }
+
+}
+}
+#skills{
+    .skillset{
+        @include grid;
+    }
+
+}
+#about{
+    .section-center{
+        .about-content{
+            display: flex;
+            .about-details{
+                width:55vw;
+            }
+        }
+    }
+}
+#contact{
+    .details{
+        @include grid;
+        .phone,.email,.address{
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+}
+   }
+}
+@include laptop {
+    body{
+        p{
+            font-size: 22px;
+        }
+        .html,.css,.javascript,.react,.git{
+            height: 450px;
+            width: 310px;
+        }
+       .section{
+        .section-center{
+            min-width:95vw ;
+        }
+       }
+       
+       header{
+       nav{
+        background: transparent;
+        .nav-center{
+            width: 95vw;
+            max-width: $desktop;
+            margin: 0 auto;
+            @include space;
+            .nav-header{
+                padding: 0;
+                .nav-toggle{
+                    display: none;
+                }
+            }
+            .links-container{
+                height: auto !important;
+                .links{
+                    width: 40vw;
+                    @include space;
+                    
+                    a{
+                        background: transparent;
+                        color: white;
+                        text-transform: capitalize;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+       
+       }
+       .banner{
+        .container{
+            .intro{
+                h1{
+                    font-size: 80px;
+                }
+            }
+        }
+       }
+    }
+    #skills{
+        .skillset{
+            @include grid;
+            
+        }
+    
+    }
+    #about{
+        .section-center{
+            .about-content{
+                display: flex;
+                .about-details{
+                    width:65vw;
+                }
+            }
+        }
+    }
+    #contact{
+        .details{
+            @include grid;
+            .phone,.email,.address{
+               p{font-size: 18px;}
+            }
+        }
+    }
+    }
+     
+}
+
+@include desktop {
+    body{
+        
+        header{
+        .banner{
+            .container{
+                .intro{
+                    h1{
+                        font-size: 100px;
+                    }
+                }
+            }
+           }
+        }
+        #skills{
+            .skillset{
+                @include grid;
+            }
+        
+        }
+        #about{
+            .section-center{
+                .about-content{
+                    display: flex;
+                    .about-details{
+                        width:75vw;
+                    }
+                }
+            }
+        }
+        #contact{
+            .details{
+                @include grid;
+                .phone,.email,.address{
+                    p{font-size: 18px;}
+                 }
+            }
+        }
+    }
+}

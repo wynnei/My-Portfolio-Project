@@ -1,0 +1,70 @@
+$backgcolor1:rgba(179, 179, 210,0.5);
+$backgcolor3:rgb(77, 77, 90);
+$backgcolor2:rgb(230, 230, 242);
+$span :rgb(166, 6, 6);
+$text:rgb(14, 13, 13);
+$white:rgb(255, 255, 255);
+$navText:white;
+
+@mixin transition {
+    transition: all 0.5s linear;
+}
+@mixin space{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin gradient{
+    content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.9;
+        z-index: -1;
+}
+@mixin flexcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin links{
+    color: white;
+        text-transform: uppercase;
+        font-size: 28px;
+        border: 1px  solid rgb(154, 10, 10);
+        padding: 8px 8px;
+        
+        &:hover{
+            background-color: rgb(93, 38, 38);
+            border: 1px  solid rgb(253, 251, 251);
+            @include transition;
+        }
+}
+@mixin flexcolumn{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@mixin contacts-styling {
+    height: 160px;
+    width: 290px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgb(126, 122, 122);   
+}
+
+@mixin grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-column-gap: 18px;
+    grid-row-gap: 24px;
+}
+@mixin gridl{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 30px;
+}
