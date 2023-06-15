@@ -1,4 +1,5 @@
-![image](https://github.com/wynnei/My-Portfolio-Project/assets/26481612/cc257a76-2663-4a03-a226-49a308da810e)# My Portfolio Project
+# My Portfolio Project
+![image](https://github.com/wynnei/My-Portfolio-Project/assets/26481612/cc257a76-2663-4a03-a226-49a308da810e)
 This is a front end project showcasing my skills , knowledge and experience.Some may not be here because i learn new things daily.
 
 ## Table of contents
