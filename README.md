@@ -13,9 +13,6 @@ This is a front end project showcasing my skills , knowledge and experience.Some
 
 ## Overview
 
-Landing page 
-![Landing page image.png…]()
-
 ### Links
 - Live Site URL: [https://my-portfolio-project-three.vercel.app/](https://my-portfolio-project-three.vercel.app/)
 
